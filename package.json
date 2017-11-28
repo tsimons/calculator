@@ -1,0 +1,27 @@
+{
+  "name": "@in/calculator",
+  "version": "1.0.0",
+  "description": "Mock module to demo private modules",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "lib"
+  ],
+  "scripts": {
+    "prepublish": "npm run-script test && npm run-script build",
+    "build": "babel src/calculator.js --out-file lib/calculator.js",
+    "dev": "babel src/calculator.js --watch --out-file lib/calculator.js",
+    "test": "jest src --coverage",
+    "test:watch": "jest src --coverage --watch"
+  },
+  "author": "tj simons <tjsimons@invisionapp.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-jest": "^21.2.0",
+    "babel-preset-es2015": "^6.24.1",
+    "jest": "^21.2.1",
+    "regenerator-runtime": "^0.11.0"
+  }
+}
