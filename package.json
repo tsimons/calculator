@@ -1,5 +1,5 @@
 {
-  "name": "@in/calculator",
+  "name": "@knight-owl-studios/calculator",
   "version": "1.0.0",
   "description": "Mock module to demo private modules",
   "main": "index.js",
